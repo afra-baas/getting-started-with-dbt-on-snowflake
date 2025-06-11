@@ -17,3 +17,5 @@ tasty_bytes:
       database: tasty_bytes_dbt_db
       schema: prod
       warehouse: tasty_bytes_dbt_wh
+
+      # added a comment
