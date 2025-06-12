@@ -18,9 +18,9 @@ CREATE OR REPLACE NETWORK RULE tasty_bytes_dbt_db.public.dbt_network_rule
   TYPE = HOST_PORT
   VALUE_LIST = ('hub.getdbt.com', 'codeload.github.com');
 
-CREATE OR REPLACE EXTERNAL ACCESS INTEGRATION dbt_access_integration
-  ALLOWED_NETWORK_RULES = (tasty_bytes_dbt_db.public.dbt_network_rule)
-  ENABLED = true;
+-- CREATE OR REPLACE EXTERNAL ACCESS INTEGRATION dbt_access_integration
+--   ALLOWED_NETWORK_RULES = (tasty_bytes_dbt_db.public.dbt_network_rule)
+--   ENABLED = true;
 
 
 CREATE OR REPLACE FILE FORMAT tb_101.public.csv_ff 
